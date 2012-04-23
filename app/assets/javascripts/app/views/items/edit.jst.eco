@@ -16,9 +16,8 @@
   <label>
     <span>Complete</span>
     <input 
-      type="text" name="complete" 
-      value="<%= @complete %>" required
->
+      type="checkbox" name="complete"
+      <% if @complete: %>checked="checked"<% end %> />
     <br />
   </label>
   
