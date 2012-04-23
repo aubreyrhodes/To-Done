@@ -1,12 +1,16 @@
-<h1>Listing Items</h1>
+<h1>To-Done Items</h1>
 
-<% for item in @items: %>
-  <div class="item" data-id="<%= item.id %>">
-    <a data-type="show"><%= item.title %></a>
-    
-    <a data-type="edit">Edit</a> 
-    <a data-type="destroy">Destroy</a>
-  </div>
-<% end %>
+<ul class="unstyled">
+  <% for item in @items: %>
+    <li class="item" data-id="<%= item.id %>">
+      <div class="form-actions">
+      <a data-type="show"><%= item.title %></a>
+      
+      <a class="btn btn-primary item-actions" data-type="edit">Edit</a> 
+      <a class="btn btn-danger item-actions" data-type="destroy">Destroy</a>
+      </div>
+    </li>
+  <% end %>
+</ul>
 
 <p><a data-type="new">New Item</a></p>

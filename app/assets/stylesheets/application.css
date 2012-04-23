@@ -10,7 +10,8 @@
  *
  *= require_self
  *= require_tree .
-*/
+ *= require bootstrap_and_overrides
+ */
 .stack > *:not(.active) {
   display: none;
 }}
