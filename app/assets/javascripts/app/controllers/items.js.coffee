@@ -80,6 +80,7 @@ class Index extends Spine.Controller
     'click [data-type=destroy]': 'destroy'
     'click [data-type=show]':    'show'
     'click [data-type=new]':     'new'
+    'click [data-type=toggle-completed]': 'toggle_completed'
 
   constructor: ->
     super
@@ -101,6 +102,14 @@ class Index extends Spine.Controller
   show: (e) ->
     item = $(e.target).item()
     @navigate '/items', item.id
+  toggle_completed: (e) ->
+    item = $(e.target).item()
+    item.completed = !item.completed
+    item.save()
+    if item.completed
+      $(e.target).addClass('btn-success')
+    else
+      $(e.target).removeClass('btn-success')
     
   new: ->
     @navigate '/items/new'
