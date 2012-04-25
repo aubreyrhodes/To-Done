@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery.ui.all
+//= require jquery.ui.touch-punch.min
 //= require jquery_ujs
 //= require twitter/bootstrap
 //= require app
