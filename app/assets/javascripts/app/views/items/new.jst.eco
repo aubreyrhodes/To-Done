@@ -1,26 +1,5 @@
-<h1>New Item</h1>
-
-<a data-type="back">Back</a>
-
-<form>
-  
-  <label>
-    <span>Title</span>
-    <input 
-      type="text" name="title" 
-      value="<%= @title %>" required
- autofocus>
-    <br />
-  </label>
-  
-  <label>
-    <span>Complete</span>
-    <input 
-      type="checkbox" name="completed"
-      <% if @completed: %>checked="checked"<% end %> />
-    <br />
-  </label>
-  
-  <button>Create</button>
-
-</form>
+<li class="items-form input-append item">
+  <input type="text" name="title" placeholder="Title..." />
+  <a class="btn btn-primary" data-type="create">Create</a>
+  <a class="btn" data-type="cancel">Cancel</a>
+</li>
