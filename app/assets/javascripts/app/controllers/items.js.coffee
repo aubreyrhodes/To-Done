@@ -22,6 +22,7 @@ class Index extends Spine.Controller
   render: =>
     items = Item.all()
     @html @view('items/index')(items: items)
+    $('.items').sortable()
     
   destroy: (e) ->
     item = $(e.target).item()
