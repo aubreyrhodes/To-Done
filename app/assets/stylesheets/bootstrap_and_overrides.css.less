@@ -28,27 +28,34 @@ body { padding-top: 60px; }
 // Example:
 // @linkColor: #ff0000;
 
+.items{
+  border-collapse: separate;
+}
+
 .item{
+  display: block;
   .item-title{
     width: 200px;
     display: inline-block;
-    border: 1px solid #CCC;
+    margin-bottom: 0px;
+    background-color: whiteSmoke;
+    margin-left: -3px;
+    margin-right: -3px;
     height: 18px;
     padding: 4px;
-    margin-top: 4px;
-    background-color: whiteSmoke;
+    border: 1px solid #ccc;
+    line-height: 18px;
   }
   .btn{
     margin-top: -3px;
-    margin-right: -4px !important;
-    margin-left: -4px !important;
-  }
+    }
   .item-delete-btn{
     display: none;
-    padding-top: 6px;
-    padding-bottom: 5px;
   }
   input{
     margin-top: 6px;
   }
+}
+.items-form .btn{
+  margin-left: -6px;
 }

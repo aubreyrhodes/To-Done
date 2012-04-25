@@ -1,5 +1,7 @@
-<li class="items-form input-append item">
-  <input type="text" name="title" placeholder="Title..." />
-  <a class="btn btn-primary" data-type="create">Create</a>
-  <a class="btn" data-type="cancel">Cancel</a>
+<li>
+  <div class="items-form input-append item">
+    <input type="text" name="title" placeholder="Title..." />
+    <a class="btn btn-primary" data-type="create">Create</a>
+    <a class="btn" data-type="cancel">Cancel</a>
+  </div>
 </li>

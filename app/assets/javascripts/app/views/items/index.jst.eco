@@ -2,11 +2,13 @@
 
 <ul class="unstyled items">
   <% for item in @items: %>
-    <li class="item input-prepend input-append" data-id="<%= item.id %>">
-      <a class="btn <%- if item.completed: %> btn-success <% end %>"
-      data-type="toggle-completed"><i class="icon-ok"></i></a>
-      <span class="item-title"><%= item.title %></span>
-      <a class="btn btn-danger item-delete-btn" data-type="destroy">Destroy</a>
+    <li data-id="<%= item.id %>">
+      <div class="item input-prepend input-append">
+        <a class="btn <%- if item.completed: %> btn-success <% end %>"
+        data-type="toggle-completed"><i class="icon-ok"></i></a>
+        <span class="item-title"><%= item.title %></span>
+        <a class="btn btn-danger item-delete-btn" data-type="destroy">Destroy</a>
+      </div>
     </li>
   <% end %>
 </ul>

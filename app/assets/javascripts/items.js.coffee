@@ -3,5 +3,5 @@
 # You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
 
 jQuery(document).ready ->
-  jQuery("#app").on("mouseover", ".item", -> jQuery('.item-delete-btn', @).show())
+  jQuery("#app").on("mouseover", ".item", -> jQuery('.item-delete-btn', @).css('display', 'inline-block'))
   jQuery("#app").on("mouseout", ".item", -> jQuery('.item-delete-btn', @).hide())
