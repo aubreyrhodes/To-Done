@@ -26,6 +26,7 @@ gem 'jquery-ui-rails'
 gem 'eco'
 gem 'spine-rails'
 gem 'twitter-bootstrap-rails'
+gem 'acts_as_list'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
